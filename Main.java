@@ -16,12 +16,9 @@ public class Main {
 
         } else {
             GM1.batting(GM1.team.get(1), 0, GM1.input);
-
         }
 
         GM1.winning();
-
-
     }
 }
 
