@@ -1,16 +1,13 @@
 package com.Isuruni;
 
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 public  class Team {
     public static final String BATTING = "Batting";
     private String team_name;
     private int total_score;
     private int total_wickets;
-    public ArrayList<Player> players=new ArrayList<>();
+    private ArrayList<Player> players=new ArrayList<>();
     private int current_batsman;
     private int current_score;
     private Boolean toss;
@@ -110,9 +107,7 @@ public  class Team {
         return nextPlayer;
     }
     public String getSummary(){
-        return "Total score now : "+ getTotal_score()+ "\n"+"Total wickets now : "+ getTotal_wickets();
+        return "Total score now : "+ getCurrent_score()+ "\n"+"Total wickets now : "+ getTotal_wickets();
     }
-
-
-
+    
 }
